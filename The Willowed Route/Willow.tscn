@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://c3tj4v6ccptw2"]
+
+[ext_resource type="Script" path="res://car.gd" id="1_oxtlw"]
+[ext_resource type="PackedScene" uid="uid://b6fsklgdx0vv3" path="res://carProtagonist.glb" id="1_saj78"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_nfd7m"]
+radius = 0.888163
+height = 2.97881
+
+[node name="World" type="Node3D"]
+
+[node name="VehicleBody3D" type="VehicleBody3D" parent="."]
+script = ExtResource("1_oxtlw")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="VehicleBody3D"]
+transform = Transform3D(1, 0, 0, 0, 0.00370008, -0.999993, 0, 0.999993, 0.00370008, 0, 0.651162, -0.0327697)
+shape = SubResource("CapsuleShape3D_nfd7m")
+
+[node name="carProtagonist" parent="VehicleBody3D" instance=ExtResource("1_saj78")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0030632, 0, -0.000260115)
+
+[node name="SpringArm3D" type="SpringArm3D" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="SpringArm3D"]
