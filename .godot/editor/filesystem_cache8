@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1695269129
+::res://::1695679486
 icon.svg::CompressedTexture2D::2409646244976161575::1695253711::1695253733::1::::<><>::
 ::res://addons/::1695163364
 ::res://addons/Wwise/::1695265362
@@ -53,5 +53,7 @@ wwise.gdextension::GDExtension::-1::1695163402::0::1::::<><>::
 ::res://addons/Wwise/native/lib/win64/release/::1695163400
 ::res://addons/Wwise/runtime/::1695163402
 wwise_runtime_manager.gd::GDScript::-1::1695163402::0::1::::<>Node<>::
-::res://GeneratedSoundBanks/::1695269042
+::res://GeneratedSoundBanks/::1695269671
+Init.txt::TextFile::-1::1695269671::0::1::::<><>::
 wwise_ids.gd::GDScript::-1::1695269042::0::1::::AK<>RefCounted<>::
+::res://GeneratedSoundBanks/English(US)/::1695269671
